@@ -1,3 +1,8 @@
+// this is a shabang that tells the terminal we want to run this file in a node environment
+// this means we don't have to type node in front of the file in the terminal
+// we still have to type ./ in front of the file though
+#!/usr/bin/env node
+
 // 1. const and/or let
 // 1. Object literal shorthand
 // 1. Destructuring assignments
@@ -5,25 +10,19 @@
 // 1. Spread operator
 // 1. Template literals
 
-const giveMe = "Give me";
+const giveMe = "Gimmmie";
 
 let cheer = (name) => {
   let names = name.toUpperCase();
   // let nameInArray = name.split('');
   let nameInArray = [...names];
   for (let elem of nameInArray) {
-    // if (elem == 'A' || elem == 'E' || elem == 'I' || elem == 'O') {
-    //   console.log(anAn, elem + '!');
-    // } else if (elem !== ' ') {
-    //   console.log(anA, elem + '!');
-    // }
     let conj = 'AEIOFHLMNRSX'.includes(elem) ? 'an' : 'a'; // ternary operator
     if (elem !== ' ') {
       console.log(giveMe, conj, elem + '!');
     }
   }
   console.log(`What does that spell?\n${names}!`)
-  // console.log(names + '!');
 }
 cheer('John Able');
 // setInterval(cheer('John Able'), 1000);
