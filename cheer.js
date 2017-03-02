@@ -1,7 +1,9 @@
-// this is a shabang that tells the terminal we want to run this file in a node environment
-// this means we don't have to type node in front of the file in the terminal
-// we still have to type ./ in front of the file though
 #!/usr/bin/env node
+// this is a shabang that tells the terminal we want to run this file in a node environment
+// the shabang MUST be at the top with no comments above it
+// this means we don't have to type node in front of the file in the terminal
+// we still have to type ./ in front of the file though... dumb
+// chmod +x cheer.js will change the read write directives so we can directly open it
 
 // 1. const and/or let
 // 1. Object literal shorthand
