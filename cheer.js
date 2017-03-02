@@ -17,7 +17,7 @@ let cheer = (name) => {
     // } else if (elem !== ' ') {
     //   console.log(anA, elem + '!');
     // }
-    let conj = 'AEIOFHLMNRSX'.includes(elem) ? 'an' : 'a';
+    let conj = 'AEIOFHLMNRSX'.includes(elem) ? 'an' : 'a'; // ternary operator
     if (elem !== ' ') {
       console.log(giveMe, conj, elem + '!');
     }
